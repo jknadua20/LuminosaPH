@@ -1,0 +1,149 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: rgb(68,68,68);
+    background: linear-gradient(180deg, rgba(68,68,68,1) 0%, rgba(68,68,68,1) 83%, rgba(45,45,45,1) 100%);
+}
+
+
+/*navbar*/
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(87, 87, 87, 0.349)),url(./assets/images/heropage1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.navbar {
+    background: #444444;
+    z-index: 1;
+    position: fixed;
+}
+
+.namelogo {
+    width: 10rem;
+    cursor: pointer;
+}
+
+.navbar .nav-item .nav-list {
+    list-style: none;
+    display: inline-block;
+    margin: 0 40px;
+    position: relative;
+}
+
+
+.greeting {
+    margin: 20px auto;  
+    font-weight: 100;
+    line-height: 25px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+
+
+
+.content {
+    width: 40%;
+    position: absolute;
+    bottom: 25%;
+    left: 20%;
+    transform: translateY(-50%);
+    transform: translateX(-10%);
+    word-wrap: break-word;
+    color: #e2e2e2;
+    padding-left: 50px;
+}
+
+
+@media (min-width:200px) and (max-width:768px) {
+    .content {
+        width: 70%;
+    }
+    
+}
+
+@media (min-width:769px) and (max-width:1280px) {
+    .content {
+        width: 70%;
+    }
+    
+}
+
+
+
+.info {
+    border-color: #646464;
+    color: rgb(255, 255, 255);
+    width: 30%;
+    height: 2.5rem;
+}
+
+.info:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+
+/*carousel*/
+
+.container.carousel {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    width: 60%;
+    height: auto;
+
+}
+
+.carousel {
+    width: 80%;
+    height: 50%;
+    object-fit: contain;
+}
+
+svg {
+    fill: white;
+}
+
+.social {
+    color: white;
+}
+
+.navigator {
+    position: absolute;
+    bottom
+}
+
+
+.find-more {
+    border: 1px solid #000000;
+    background: #000000;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+}
+
+.find-more:hover {
+    background: #b3b3b3;
+    color: #000000;
+    border: #444444 ;
+}
+
