@@ -43,6 +43,15 @@ body {
     position: relative;
 }
 
+.navbar-nav {
+    text-align: center;
+}
+
+
+.nav-link {
+    text-align: center;
+}
+
 
 .greeting {
     margin: 20px auto;  
@@ -132,6 +141,12 @@ svg {
 }
 
 
+
+.find-more:hover {
+    background: #b3b3b3;
+    color: #000000;
+}
+
 .find-more {
     border: 1px solid #000000;
     background: #000000;
@@ -140,10 +155,3 @@ svg {
     color: white;
     border-radius: 15px;
 }
-
-.find-more:hover {
-    background: #b3b3b3;
-    color: #000000;
-    border: #444444 ;
-}
-
