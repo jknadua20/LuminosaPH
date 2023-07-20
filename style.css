@@ -184,9 +184,33 @@ h1 {
 
 /*********************************products********************************/
 
-.products .products-container {
+
+
+
+.products .products-container img {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.products .products-container .row {
+    display: block;
+    text-align: center
 
 }
+
+.products .products-container .row .col-div {
+
+}
+
+.products .products-container .row .col-div .div-img {
+    display: inline-block;
+}
+
+
 
 
 
