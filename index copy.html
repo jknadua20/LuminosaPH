@@ -12,43 +12,31 @@
 </head>
 <body class="vh-100 overflow-hidden">
 
-<!--Nav Bar-->
+<!-- Navbar Redo -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent bg-none fixed-top">
-    <div class="container">
+<section id="navbar-section">
+  <div class="container-fluid navbar-container">
+  <nav class="container">
+    <input type="checkbox" id="check">
+    <label for="check" class="check-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label for="logo" class="logo"><img src="./assets/images/namelogo-1.png" alt="name-logo" height="70px" ></label>
+    <ul>
+      <li><a class="active" href="">Home</a></li>
+      <li><a href="">Products</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">Get a quote</a></li>
+    </ul>
+  </nav>
+  </div>
+</section>
 
-<!--Logo-->
 
-  <a class="navbar-brand fs-4" href="#"> <img src="./assets/images/namelogo-1.png" height="70px" alt=""></a>
 
-<!--Toggle Button-->
-    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-<!--Navbar-->
 
-    <div class="container sidebar collapse navbar-collapse offcanvas-end" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index copy.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Products
-          </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Get a Quote</a></li>
-            </ul>
-        </li>
-        
-      </ul>
+
 
       <!--Login SignUp-->
     <div class="d-flex justify-content-center align-items-center gap-3">

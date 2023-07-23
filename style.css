@@ -46,6 +46,11 @@ body {
     text-align: center;
 }
 
+/* boset na to */
+
+.navbar-collapse {
+    flex-grow: 0;
+}
 
 .nav-link {
     text-align: center;
@@ -92,6 +97,7 @@ body {
 h1 {
     font-size: 3rem;
 }
+
 
 
 /***************************************content***************************/
@@ -161,7 +167,7 @@ h1 {
 .section-about-us .container p {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 200;
 }
 
@@ -207,7 +213,7 @@ h1 {
 }
 
 .products .products-container .row .col-div .div-img {
-    display: inline-block;
+    display: flex;
 }
 
 
