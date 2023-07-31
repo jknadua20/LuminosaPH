@@ -22,9 +22,9 @@ body {
 
 /*navbar*/
 .banner {
-    width: 100%;
-    min-height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(87, 87, 87, 0.349)),url(./assets/images/heropage1.jpg);
+    width: 100vw;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -115,16 +115,85 @@ h1 {
 }
 
 
-@media (min-width:200px) and (max-width:768px) {
+@media (min-width:991px) and (max-width:1440px) {
     .content {
-        width: 70%;
+        width: 50%;
+    }
+
+    .content > h1 {
+        font-size: 3rem;
+    }
+
+    .content > h2 {
+        font-size: 2rem;
+    }
+
+    .content > p {
+        font-size: 1rem;
     }
     
 }
 
-@media (min-width:769px) and (max-width:1280px) {
+@media (min-width:481px) and (max-width:720px) {
+    .content {
+        width: 90%;
+        transform: translateX(-20%);
+    }
+
+    .content > h1 {
+        font-size: 2.5rem;
+    }
+
+    .content > h2 {
+        font-size: 2rem;
+    }
+
+    .content > p {
+        font-size: 1rem;
+    }
+    
+}
+
+
+@media (min-width:721px) and (max-width:990px) {
     .content {
         width: 70%;
+        transform: translateX(-20%);
+    }
+
+    .content > h1 {
+        font-size: 2.5rem;
+    }
+
+    .content > h2 {
+        font-size: 2rem;
+    }
+
+    .content > p {
+        font-size: 1rem;
+    }
+    
+}
+
+
+
+
+@media (min-width:360px) and (max-width:480px) {
+    .content {
+        width: 90%;
+        transform: translateX(-20%);
+    }
+
+    .content > h1 {
+        font-size: 1.5rem;
+    }
+
+    .content > h2 {
+        font-size: 1rem;
+    }
+
+    .content > p {
+        font-size: .7rem;
     }
     
 }
@@ -202,7 +271,21 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); */
 }
+
+
+
+/* @media (max-width:960px) {
+    .products .products-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }    
+} */
 
 
 .product-img:hover {
@@ -225,11 +308,11 @@ h1 {
 }
 
 .card {
-    height: 400px;
-    width: 350px;
+    height: 350px;
+    width: 300px;
     cursor: pointer;
     padding: 0;
-    margin: 10px;
+    margin: 30px;
     position: relative;
     overflow: hidden;
 }
@@ -315,14 +398,9 @@ h1 {
 }
 
 
+
 .carousel-container .slide .carousel-inner .carousel-item {
     border-radius: 50px;
-}
-
-
-.navigator {
-    position: absolute;
-    bottom
 }
 
 
