@@ -21,9 +21,10 @@ body {
 
 
 /*navbar*/
+
 .banner {
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(87, 87, 87, 0.349)),url(./assets/images/heropage1.jpg);
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -261,9 +262,6 @@ h1 {
 
 
 
-.products .products-container {
-    width: 100%;
-}
 
 .products .products-container {
     display: flex;
@@ -271,6 +269,7 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 40%;
     /* display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); */
 }
@@ -321,6 +320,8 @@ h1 {
 .cart-btn {
     background-color: #b3b3b300;
     width: auto;
+    position: relative;
+ 
 }
 
 .card-body .add-to-cart {
@@ -346,28 +347,31 @@ h1 {
 
 }
 
-.add-to-cart::after {
+/* .add-to-cart::after {
     content: '$00000';
     transform: translateY(10px);
     padding-right: 10px;
     font-size: 1.3rem;
-}
+} */
 
 
 .card-title {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 33px;
     padding-top: 10px;
 }
 
 .card-info {
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 25px;
     margin: 60px 0;
     font-weight: 200;
-    
 } 
+
+.products > h1 {
+    text-align: center;
+}
 
 
 
@@ -417,6 +421,36 @@ h1 {
     text-decoration: none;
     color: white;
     border-radius: 15px;
+}
+
+
+/* Testimonials */
+
+
+.testimonials-container {
+    width: 100%;
+    height: 500px;
+}
+
+.testimonials {
+    border: solid 2px #444;
+    width: 300px;
+    height: 400px;
+}
+
+.testimonials > img {
+    height: 100px;
+    width: 100px;
+}
+
+.testimonials-container > h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonials-container .outer-box {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
