@@ -427,31 +427,72 @@ h1 {
 /* Testimonials */
 
 
+#testimonials {
+    margin: 100px 0;
+}
+
 .testimonials-container {
     width: 100%;
     height: 500px;
 }
 
 .testimonials {
-    border: solid 2px #444;
     width: 300px;
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    cursor: pointer;
+}
+
+.testimonials:hover {
+    border: solid .05rem #444;
+
 }
 
 .testimonials > img {
     height: 100px;
     width: 100px;
+    position: relative;
+    margin: 10px 0 50px 0;
 }
 
 .testimonials-container > h1 {
     text-align: center;
     margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
 }
 
 .testimonials-container .outer-box {
     display: flex;
     justify-content: space-evenly;
 }
+
+blockquote {
+    margin: 0;
+    width: 100%;
+    padding-left: 10px;
+    line-height: 25px;
+    letter-spacing: 3px;
+}
+
+.testimonials-container .outer-box .testimonials .profile-name {
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.fa-solid {
+    transform: scale(.8);
+    position: relative;
+    top: 0;
+}
+
+
+
 
 
 
