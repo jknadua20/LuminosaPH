@@ -258,6 +258,7 @@ h1 {
 }
 
 
+
 /*********************************products********************************/
 
 
@@ -376,6 +377,14 @@ h1 {
 
 
 
+@media only screen and (max-width:1200px) {
+    .products > h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+
 
 
 
@@ -424,6 +433,14 @@ h1 {
 }
 
 
+@media only screen (max-width:1200px) {
+    .carousel-container {
+        width: 100vw;
+    }
+    
+}
+
+
 /* Testimonials */
 
 
@@ -433,12 +450,12 @@ h1 {
 
 .testimonials-container {
     width: 100%;
-    height: 500px;
+    height: 80%;
 }
 
 .testimonials {
     width: 300px;
-    height: 400px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: top;
@@ -452,8 +469,8 @@ h1 {
 }
 
 .testimonials > img {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     position: relative;
     margin: 10px 0 50px 0;
 }
@@ -491,6 +508,26 @@ blockquote {
     top: 0;
 }
 
+
+@media only screen and (max-width:1200px) {
+    .outer-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials-container > h1 {
+        font-size: 23px;
+    }
+
+    .testimonials-container .outer-box .testimonials .profile-name {
+        font-size: 20px;
+    }
+    
+    .testimonials-container blockquote {
+        font-size: 15ppx;
+    }
+}
 
 
 
@@ -685,6 +722,7 @@ blockquote {
     .contact-container .contact-info .box .icon .fa{
         height: 20px;
     }
+
 
 }
 
